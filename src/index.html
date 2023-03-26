@@ -17,7 +17,18 @@
               tw:<span class="text-sky-900">mf</span>
             </div>
           </div>
-          <div class="flex flex-1 items-center justify-end">
+
+          <!-- mobile navigation used at 767px or less -->
+          <div class="ml-auto my-auto pr-4 block cursor-pointer md:hidden">
+            <div>
+              <div class="bg-zinc-200 rounded-full w-8 h-1"></div>
+              <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
+              <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1"></div>
+            </div>
+          </div>
+
+          <!--desktop navigation used with md breakpoint at 768px and above-->
+          <div class="md:flex hidden flex-1 items-center justify-end">
             <div class="menu-item"><span>Home</span></div>
             <div class="menu-item"><span>Lineup</span></div>
             <div class="menu-item group">
@@ -33,6 +44,7 @@
             </div>
             <div class="menu-item"><span>Support</span></div>
           </div>
+          
         </nav>
       </header>
     </main>
