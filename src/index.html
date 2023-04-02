@@ -17,6 +17,16 @@
             mobileMenuIcon.classList.add("open");
           }
         })
+
+        const ticketsMenuItem = document.getElementById("tickets-menu-item");
+        ticketsMenuItem.addEventListener("click", () => {
+          if(ticketsMenuItem.classList.contains("open")) {
+            ticketsMenuItem.classList.remove("open");
+          }
+          else {
+            ticketsMenuItem.classList.add("open");
+          }
+        })
       }
     </script>
   </head>
@@ -34,15 +44,45 @@
 
           <!-- mobile navigation icon used at 767px or less -->
           <div class="ml-auto my-auto pr-4 block cursor-pointer md:hidden">
-            <div id="mobile-menu-button" class="group">
+            <div id="mobile-menu-button" class="group peer">
               <div class="bg-zinc-200 rounded-full w-8 h-1 top-0 group-open:rotate-45 group-open:top-2 relative transition-all"></div>
               <div class="bg-zinc-200 opacity-100 rounded-full w-8 h-1 mt-1 group-open:opacity-0 transition-all"></div>
               <div class="bg-zinc-200 rounded-full w-8 h-1 top-0 mt-1 group-open:-rotate-45 group-open:-top-2 relative transition-all"></div>
             </div><!--end of hamburger icon-->
 
             <!--mobile menu-->
-            <div class="absolute left-0 bg-gradient-to-r from-rose-500 to-pink-500 w-full">
-            mobile menu <span class="font-bold text-yellow-300">items</span> go here
+            <div class="absolute top-[62px] left-0 bg-gradient-to-r from-rose-500 to-pink-500 peer-open:block hidden w-full">
+
+              <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+                <span>Home</span>
+              </div>
+
+              <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+                <span>Lineup</span>
+              </div>
+
+              <div id="tickets-menu-item" class="group relative h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+
+                <div class="p-4 text-center font-bold">Tickets</div>
+                <div class="hidden group-open:block">
+                  <div class="relative p-4 text-center text-pink-200 hover:text-zinc-200 hover:bg-white/5">
+                    <span>
+                      Single day ticket
+                    </span>
+                  </div>
+                  <div class="relative p-4 text-center text-pink-200 hover:text-zinc-200 hover:bg-white/5">
+                    <span>
+                      7 Day ticket
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10">
+                <span>Support</span>
+              </div>
+            
             </div>
 
           </div><!--end of hamburger wrapper-->
