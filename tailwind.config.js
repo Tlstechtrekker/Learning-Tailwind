@@ -2,5 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {},
-  plugins: [require("./plugins/openVariant")],
+  plugins: [
+    require("./plugins/openVariant"),
+    require("./plugins/outlineSolid"),
+  ],
 };
+
+
