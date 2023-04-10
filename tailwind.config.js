@@ -1,7 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  theme: {},
+  theme: {
+    extend: {
+      keyframes: {
+        wavey: {
+          "0%, 100%": {
+            transform: "scaleY(0.5)"
+          },
+          "50%": {
+            transform: "scaleY(1.5)"
+          }
+        }
+      },
+      //create the actual animation - will create new class name called animate-wavey
+      animation: {
+        wavey: "wavey 1000ms linear infinite"
+      },
+    },
+  },
   plugins: [
     require("./plugins/openVariant"),
     require("./plugins/outlineSolid"),

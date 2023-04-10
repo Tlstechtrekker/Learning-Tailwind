@@ -116,6 +116,16 @@
             <!-- logo -->
             <div class="relative">
               <img src="./assets/images/logo.png" width="175" alt="">
+              <div class="flex mt-[-70px] mb-5 justify-center items-center"><!-- outer wrapper positioning div for animation-->
+                <div class="flex bg-pink-500 h-14 w-14 rounded-full items-center justify-center gap-1"><!-- inner div pink circle that will hold tags for animated bars-->
+                  <!-- the 5 bars-->
+                  <div class="w-1 h-2 bg-cyan-900 rounded-full animate-wavey animation-delay-[150ms]"></div>
+                  <div class="w-1 h-3 bg-cyan-400 rounded-full animate-wavey"></div>
+                  <div class="w-1 h-4 bg-cyan-100 rounded-full animate-wavey"></div>
+                  <div class="w-1 h-3 bg-cyan-400 rounded-full animate-wavey"></div>
+                  <div class="w-1 h-2 bg-cyan-900 rounded-full animate-wavey"></div>
+                </div>
+              </div>
             </div>
             <!-- logo label-->
             <div class="text-5xl font-bold">tw:<span class="text-sky-900">mf</span></div>
@@ -127,7 +137,7 @@
           <!-- form elements-->
           <form class="mt-3 flex gap-2">
             <input type="email" placeholder="email" class=" selection:bg-white/30 backdrop-blur-md p-2 text-sky-900 font-bold placeholder-zinc-500 caret-pink-500 outline-pink-500 rounded-sm border border-white/40 focus:outline-solid focus:outline-2">
-            <button class="cursor-pointer bg-pink-500 py-2 px-4 font-bold rounded-sm transition-colors hover:bg-sky-900 hover:shadow hover:shadow-black/20">Subscribe</button>
+            <button type="submit" class="cursor-pointer bg-pink-500 py-2 px-4 font-bold rounded-sm transition-colors hover:bg-sky-900 hover:shadow hover:shadow-black/20">Subscribe</button>
           </form>
         </div>
 
