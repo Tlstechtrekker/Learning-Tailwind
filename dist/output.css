@@ -658,6 +658,10 @@ h6{
   right: 0px;
 }
 
+.-top-8{
+  top: -2rem;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -690,10 +694,6 @@ h6{
 
 .mt-20{
   margin-top: 5rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
 }
 
 .mt-4{
@@ -864,6 +864,10 @@ h6{
   overflow: auto;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .whitespace-nowrap{
   white-space: nowrap;
 }
@@ -936,26 +940,6 @@ h6{
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
-}
-
-.bg-orange-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
-}
-
-.bg-lime-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1008,16 +992,8 @@ h6{
   padding-right: 1rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
-}
-
 .pb-5{
   padding-bottom: 1.25rem;
-}
-
-.pb-6{
-  padding-bottom: 1.5rem;
 }
 
 .text-center{
@@ -1124,20 +1100,8 @@ h6{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.outline{
-  outline-style: solid;
-}
-
-.outline-2{
-  outline-width: 2px;
-}
-
 .outline-pink-500{
   outline-color: #ec4899;
-}
-
-.outline-red-200{
-  outline-color: #fecaca;
 }
 
 .ring{
