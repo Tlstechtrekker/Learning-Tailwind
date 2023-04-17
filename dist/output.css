@@ -425,6 +425,42 @@ html{
   font-family: "Quicksand", sans-serif;
 }
 
+h1{
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+h5{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -627,6 +663,11 @@ html{
   margin-bottom: auto;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -645,6 +686,22 @@ html{
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .block{
@@ -691,6 +748,10 @@ html{
   height: 1rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .min-h-\[400px\]{
   min-height: 400px;
 }
@@ -709,6 +770,14 @@ html{
 
 .w-1{
   width: 0.25rem;
+}
+
+.min-w-\[80\%\]{
+  min-width: 80%;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
@@ -755,6 +824,14 @@ html{
   cursor: pointer;
 }
 
+.snap-x{
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-center{
+  scroll-snap-align: center;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -777,6 +854,14 @@ html{
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.overflow-auto{
+  overflow: auto;
 }
 
 .whitespace-nowrap{
@@ -826,19 +911,19 @@ html{
   background-color: rgb(255 255 255 / 0.3);
 }
 
-.bg-cyan-900{
+.bg-pink-900{
   --tw-bg-opacity: 1;
-  background-color: rgb(22 78 99 / var(--tw-bg-opacity));
+  background-color: rgb(131 24 67 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-400{
+.bg-pink-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-100{
+.bg-pink-100{
   --tw-bg-opacity: 1;
-  background-color: rgb(207 250 254 / var(--tw-bg-opacity));
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
 .bg-orange-900{
@@ -849,6 +934,26 @@ html{
 .bg-yellow-300{
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-orange-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.bg-lime-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 230 53 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -901,6 +1006,18 @@ html{
 
 .pr-4{
   padding-right: 1rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .text-center{
@@ -996,8 +1113,31 @@ html{
   opacity: 1;
 }
 
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black\/20{
+  --tw-shadow-color: rgb(0 0 0 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline{
+  outline-style: solid;
+}
+
+.outline-2{
+  outline-width: 2px;
+}
+
 .outline-pink-500{
   outline-color: #ec4899;
+}
+
+.outline-red-200{
+  outline-color: #fecaca;
 }
 
 .ring{
@@ -1032,12 +1172,12 @@ html{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.animation-delay-\[150ms\]{
-  animation-delay: 150ms;
-}
-
 .animation-delay-200{
   animation-delay: 200ms;
+}
+
+.animation-delay-\[150ms\]{
+  animation-delay: 150ms;
 }
 
 .animation-delay-300{
@@ -1142,5 +1282,9 @@ html{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:min-w-\[40\%\]{
+    min-width: 40%;
   }
 }
