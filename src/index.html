@@ -28,6 +28,16 @@
           }
         })
 
+        const darkModeToggle= document.getElementById("dark-mode-toggle");
+        darkModeToggle.addEventListener("click", () => {
+          if(document.body.classList.contains("dark")) {
+            document.body.classList.remove("dark");
+          }
+          else {
+            document.body.classList.add("dark");
+          }
+        })
+
         const prevButton = document.getElementById("previous");
         const nextButton = document.getElementById("next");
         const carousel = document.getElementById("carousel");
@@ -42,9 +52,26 @@
       }
     </script>
   </head>
-  <body>
-    <main>
+  <body class="dark">
+    <main class="bg-zinc-200 dark:bg-zinc-900">
       <header class="text-zinc-200">
+
+        <!-- dark/light mode toggle button -->
+        <div id="dark-mode-toggle" class="flex flex-col items-center fixed top-24 right-0 w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900 p-2 text-3xl">
+          <!-- font awesome icons go here -->
+          <p class="text-sm font-bold">Use</p>
+          <!-- light mode - moon shows; sun is hidden -->
+          <i class="fa-solid fa-moon dark:hidden"></i>
+          <!-- dark mode - sun shows; moon is hidden -->
+          <i class="fa-solid fa-sun hidden dark:inline"></i>
+
+          <!---------both icons showing-one-non-active one dimmed ------------->
+          <!-- light mode - moon shows; sun is hidden -->
+          <!-- <i class="fa-solid fa-moon text-zinc-700 py-1 dark:text-yellow-400"></i> -->
+          <!-- dark mode - sun shows; moon is hidden -->
+          <!-- <i class="fa-solid fa-sun text-yellow-400 px-1 dark:text-zinc-300"></i> -->
+        </div>
+
         <nav class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
           <!--logo-->
           <div class="flex items-center p-2 gap-2">
@@ -155,7 +182,7 @@
       </header>
 
       <!-- headliner & carousel section-->
-      <div class="max-w-screen-lg mx-auto mt-20">
+      <div class="px-[30px] max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
         <h2>Headliners</h2>
         <p>
           Experience the sonic delight from these made-up artists across 7 days that music fans are calling "one of the many gigs that will happen this year."
