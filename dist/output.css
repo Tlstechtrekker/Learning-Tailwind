@@ -680,6 +680,11 @@ h6{
   margin-right: auto;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -710,6 +715,10 @@ h6{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .block{
@@ -802,6 +811,10 @@ h6{
 
 .grow{
   flex-grow: 1;
+}
+
+.border-collapse{
+  border-collapse: collapse;
 }
 
 .rotate-180{
@@ -918,6 +931,11 @@ h6{
   border-color: rgb(255 255 255 / 0.4);
 }
 
+.border-zinc-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
@@ -996,6 +1014,10 @@ h6{
   padding: 1rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -1023,6 +1045,11 @@ h6{
 .px-\[30px\]{
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pr-4{
@@ -1059,6 +1086,11 @@ h6{
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1207,6 +1239,10 @@ h6{
 
 .animation-delay-\[75ms\]{
   animation-delay: 75ms;
+}
+
+.caption-bottom{
+  caption-side: bottom;
 }
 
 .selection\:bg-white\/30 *::-moz-selection{
