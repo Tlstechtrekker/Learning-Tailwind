@@ -25,6 +25,7 @@ module.exports = {
     require("./plugins/animationDelay"),
     require("./plugins/outlineSolid"),
     require("./plugins/tableCaption.js"),
+    require("./plugins/buttonPlugin"),
   ],
 };
 
